@@ -18,5 +18,12 @@ body {
 }
 
 .container {
-  @apply max-w-7xl mx-auto px-6;
+  @apply mx-auto max-w-7xl px-6;
+}
+
+.hero-section {
+  height: (100dvh - 90px);
+  /* min-height: 560px; */
+  max-height: 1200px;
+  /* background-color: aquamarine; */
 }
