@@ -1,12 +1,15 @@
 import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <h1>Hello, Noppadon portfolio</h1>
-      <h1 className="bg-red-500 text-3xl font-bold underline">
-        Hello world!, tailwind
-      </h1>
+      <Header />
+
+      <main>Main info</main>
+
+      <Footer />
     </>
   );
 }
