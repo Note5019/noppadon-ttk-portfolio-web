@@ -4,11 +4,13 @@ export default function Header() {
   return (
     <header className="overflow-hidden sticky top-0 z-10 container">
       <div className="flex items-center justify-between gap-15 rounded-xl border border-gray-200/50 bg-gray-200/50 p-4 backdrop-blur-lg">
-        <Link to="/" className="h-[56px] w-[56px] bg-green-600"></Link>
+        <Link to="/" className="h-[56px] w-[56px]">
+        <img src="../logo.png" className="rounded-xl" />
+        </Link>
         <div className="flex justify-around gap-15">
           <Link to="/projects">Projects</Link>
-          <div>Skills</div>
-          <div>Resume</div>
+          {/* <div>Skills</div>
+          <div>Resume</div> */}
           {/* TODO: dark mode ? */}
           {/* <button data-color-mode-switch>Toggle COLOR MODE 💡</button>
           <svg
