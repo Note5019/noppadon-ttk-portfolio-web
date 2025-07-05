@@ -1,12 +1,15 @@
+import { Link } from "react-router";
+
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 container">
+    <header className="overflow-hidden sticky top-0 z-10 container">
       <div className="flex items-center justify-between gap-15 rounded-xl border border-gray-200/50 bg-gray-200/50 p-4 backdrop-blur-lg">
         <div className="h-[56px] w-[56px] bg-green-600">Logo</div>
         <div className="flex justify-around gap-15">
           <div>Home</div>
           <div>Skills</div>
           <div>Projects</div>
+          <Link to="/projects">Projects</Link>
           <div>Resume</div>
           {/* TODO: dark mode ? */}
           {/* <button data-color-mode-switch>Toggle COLOR MODE 💡</button>
@@ -23,14 +26,14 @@ export default function Header() {
             />
           </svg> */}
 
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-          </svg>
+          </svg> */}
         </div>
       </div>
     </header>
