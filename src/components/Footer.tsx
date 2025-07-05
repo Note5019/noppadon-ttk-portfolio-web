@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="container">
       <div className="-mx-4 h-[2px] bg-green-200 rounded-lg"></div>
-      <div className="mt-4 flex flex-wrap justify-between gap-10 md:flex-nowrap">
+      <div className="mt-6 pb-6 flex flex-wrap justify-between gap-10 md:flex-nowrap">
         <div className="flex flex-wrap justify-start gap-10 md:flex-nowrap md:justify-around md:gap-15">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl font-bold">Contact</h2>
