@@ -11,9 +11,9 @@ function App() {
       <Header />
 
       <main>
-        <CompaynySection />
-        <SkillSection />
         <HeroSection />
+        <SkillSection />
+        <CompaynySection />
       </main>
 
       <Footer />

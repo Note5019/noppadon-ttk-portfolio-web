@@ -25,7 +25,7 @@ export default function HeroSection() {
       </div>
       <div className="order-last col-span-2 flex max-w-9/10 flex-col items-stretch justify-self-center rounded-xl bg-yellow-200 transition delay-150 duration-300 ease-in-out hover:rotate-2 lg:order-none lg:col-span-1">
         <div className="flex justify-center p-6">
-          <img src="/images/profile.jpeg" className="rounded-lg opacity-10" />
+          {/* <img src="/images/profile.jpeg" className="rounded-lg opacity-10" /> */}
           <div className="aspect-square h-[400px] w-[400px] self-center rounded-lg bg-green-700"></div>
         </div>
 
