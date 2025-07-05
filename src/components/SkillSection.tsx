@@ -91,9 +91,9 @@ export default function SkillSection() {
       </div>
 
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
-        {skills.map((skill) => {
+        {skills.map((skill, index) => {
           return (
-            <SkillCard path={skill.path} alt={skill.alt} link={skill.link} />
+            <SkillCard key={index} path={skill.path} alt={skill.alt} link={skill.link} />
           );
         })}
       </div>

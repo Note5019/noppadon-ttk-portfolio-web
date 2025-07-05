@@ -31,9 +31,10 @@ export default function CompaynySection() {
       </div>
 
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
-        {companies.map((company) => {
+        {companies.map((company, index) => {
           return (
             <CompanyCard
+              key={index}
               path={company.path}
               alt={company.alt}
               link={company.link}
