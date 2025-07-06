@@ -1,9 +1,8 @@
 import { Project } from "../types";
 import { Card } from "flowbite-react";
 import { Popover } from "flowbite-react";
-import ExternalLink from "../assets/icons/ExternalLink.svg";
 import { Link } from "react-router";
-
+import { ReactSVG } from "react-svg";
 export default function ProjectCard({
   name,
   link,
@@ -16,10 +15,10 @@ export default function ProjectCard({
     <Link
       to={link}
       target="_blank"
-      className="flex items-center justify-center gap-2 px-3 py-2"
+      className="flex items-center justify-center gap-2 px-3 py-2 hover:underline"
     >
       <div>{linkText}</div>
-      <img src={ExternalLink} alt="ExternalLink" className="h-4 w-4" />
+      <ReactSVG className="h-4 w-4" src={"./icons/ExternalLink.svg"} />
     </Link>
   );
   return (

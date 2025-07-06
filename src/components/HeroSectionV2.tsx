@@ -45,6 +45,10 @@ export default function HeroSectionV2() {
                 className="flex cursor-pointer items-center gap-1 px-3 py-2 text-nowrap hover:underline"
               >
                 Note5019
+                <ReactSVG
+                  className="h-4 w-4"
+                  src={"./icons/ExternalLink.svg"}
+                />
               </a>
             }
           >
@@ -65,6 +69,10 @@ export default function HeroSectionV2() {
                 className="flex cursor-pointer items-center gap-1 px-3 py-2 text-nowrap hover:underline"
               >
                 noppadon-ttk
+                <ReactSVG
+                  className="h-4 w-4"
+                  src={"./icons/ExternalLink.svg"}
+                />
               </a>
             }
           >
