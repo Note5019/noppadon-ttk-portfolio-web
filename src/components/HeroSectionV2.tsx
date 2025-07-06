@@ -4,6 +4,14 @@ import Mail from "../assets/icons/Mail.svg";
 import { Popover } from "flowbite-react";
 
 export default function HeroSectionV2() {
+  function handleCoinClick() {
+    console.log("Coin clicked");
+    document.getElementById("coin")?.classList.add("flip");
+    setTimeout(() => {
+      document.getElementById("coin")?.classList.remove("flip");
+    }, 3001);
+  }
+
   return (
     <section className="container flex flex-col items-start justify-between gap-5 overflow-hidden py-6 sm:h-[60svh] sm:flex-row sm:items-center md:gap-10">
       <div className="flex flex-col gap-y-10">
@@ -12,9 +20,7 @@ export default function HeroSectionV2() {
           <p className="text-5xl font-extrabold md:text-7xl">Tongtrakoon</p>
           <p className="text-2xl font-bold md:text-4xl">
             as{" "}
-            <span className="text-[#87af9f] italic">
-              Full Stack Developer
-            </span>
+            <span className="text-[#87af9f] italic">Full Stack Developer</span>
           </p>
         </div>
 
@@ -87,11 +93,23 @@ export default function HeroSectionV2() {
           </Popover>
         </div>
       </div>
-      <div className="flex w-full justify-center lg:mr-20 lg:justify-end">
-        <img
-          className="w-64 max-w-[400px] rounded-full shadow-2xl shadow-green-200 md:w-[30svw]"
-          src="../images/profile.jpeg"
-        />
+
+      <div
+        className="coin h-[16rem] w-full md:h-auto"
+        onClick={handleCoinClick}
+      >
+        <div className="front">
+          <img
+            className="side-a w-64 max-w-[400px] rounded-full shadow-2xl shadow-green-200 md:w-[30svw]"
+            src="../images/profile.jpeg"
+          />
+        </div>
+        <div className="back">
+          <img
+            className="side-b w-64 max-w-[400px] rounded-full shadow-2xl shadow-green-200 md:w-[30svw]"
+            src="../logo.png"
+          />
+        </div>
       </div>
     </section>
   );
