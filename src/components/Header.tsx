@@ -21,7 +21,7 @@ export default function Header() {
   }
   return (
     <header className="sticky top-0 z-10 container overflow-hidden">
-      <div className="flex items-center justify-between gap-15 rounded-xl border border-gray-200/50 bg-gray-200/50 p-4 backdrop-blur-lg dark:border-gray-800/10 dark:bg-gray-500/50">
+      <div className="flex items-center justify-between gap-15 rounded-xl border border-gray-400/50 bg-gray-300/50 p-4 backdrop-blur-lg dark:border-gray-800/10 dark:bg-gray-500/50">
         <Link to="/" className="h-[56px] w-[56px]">
           <img src="../logo.png" className="rounded-xl" />
         </Link>
