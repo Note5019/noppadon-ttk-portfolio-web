@@ -1,7 +1,23 @@
 import ProjectCard from "../components/ProjectCard";
 import { Project } from "../types";
+import GA from "../utils/google-analytics";
+import { useEffect } from "react";
+import getTitle from "../utils/get-title";
 
 export default function ProjectPage() {
+  const pageTitle = getTitle("Projects");
+  const a = {
+    hitType: "pageview",
+    page: window.location.pathname,
+    title: pageTitle,
+  };
+
+  useEffect(() => {
+    document.title = pageTitle;
+
+    GA.send(a);
+  }, []);
+
   const projects: Project[] = [
     {
       name: "TCRSS Website",
