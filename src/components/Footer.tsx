@@ -1,9 +1,5 @@
-import ExternalLink from "../assets/icons/ExternalLink.svg";
-import Github from "../assets/icons/Github.svg";
-import Linkedin from "../assets/icons/Linkedin.svg";
-import Mail from "../assets/icons/Mail.svg";
-import MapPin from "../assets/icons/MapPin.svg";
 // import Phone from "../assets/icons/Phone.svg";
+import { ReactSVG } from "react-svg";
 
 export default function Footer() {
   return (
@@ -18,14 +14,14 @@ export default function Footer() {
               <a href="tel:+66942519347">094-251-9437</a>
             </div> */}
             <a
-              className="flex items-center gap-4"
+              className="flex items-center gap-4 hover:underline"
               href="mailto:noppadon.ttk@gmail.com"
             >
-              <img src={Mail} alt="Mail Icon" className="h-8 w-8" />
+              <ReactSVG className="h-8 w-8" src={"./icons/Mail.svg"} />
               noppadon.ttk@gmail.com
             </a>
             <div className="flex items-center gap-4">
-              <img src={MapPin} alt="Map" className="h-8 w-8" />
+              <ReactSVG className="h-8 w-8" src={"./icons/MapPin.svg"} />
               <p>Bangkok, Thailand</p>
             </div>
           </div>
@@ -37,13 +33,12 @@ export default function Footer() {
               href="https://www.linkedin.com/in/noppadon-ttk"
               target="_blank"
             >
-              <img src={Linkedin} alt="Linkedin" className="h-8 w-8" />
+              <ReactSVG className="h-8 w-8" src={"./icons/Linkedin.svg"} />
               <div className="flex items-center gap-1 hover:underline">
                 noppadon-ttk
-                <img
-                  src={ExternalLink}
-                  alt="ExternalLink"
+                <ReactSVG
                   className="h-4 w-4"
+                  src={"./icons/ExternalLink.svg"}
                 />
               </div>
             </a>
@@ -52,13 +47,12 @@ export default function Footer() {
               href="https://github.com/Note5019"
               target="_blank"
             >
-              <img src={Github} alt="Github" className="h-8 w-8" />
+              <ReactSVG className="h-8 w-8" src={"./icons/Github.svg"} />
               <div className="flex items-center gap-1 hover:underline">
                 Note5019
-                <img
-                  src={ExternalLink}
-                  alt="ExternalLink"
+                <ReactSVG
                   className="h-4 w-4"
+                  src={"./icons/ExternalLink.svg"}
                 />
               </div>
             </a>
