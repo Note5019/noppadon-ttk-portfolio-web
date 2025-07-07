@@ -27,11 +27,13 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center justify-around gap-15">
-          <Link to="/projects">
+          <Link to="/projects" className="hover:underline">
             <p>Projects</p>
           </Link>
+          <Link to="/resume" className="hover:underline">
+            <p>Resume</p>
+          </Link>
           {/* <div>Skills</div>
-          <div>Resume</div> */}
           {/* TODO: dark mode ? */}
           <Button outline color="green" onClick={handleThemeChange} size="sm">
             {theme === "dark" ? (

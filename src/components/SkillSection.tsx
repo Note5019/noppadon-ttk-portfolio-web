@@ -131,7 +131,7 @@ export default function SkillSection() {
         Skills
       </div>
 
-      <div className="text-lg font-extrabold italic md:text-4xl">
+      <div className="text-2xl font-extrabold italic md:text-4xl">
         Programming
       </div>
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
@@ -147,7 +147,7 @@ export default function SkillSection() {
         })}
       </div>
 
-      <div className="text-lg font-extrabold italic md:text-4xl">Databases</div>
+      <div className="text-2xl font-extrabold italic md:text-4xl">Databases</div>
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
         {databaseSkills.map((skill, index) => {
           return (
@@ -161,7 +161,7 @@ export default function SkillSection() {
         })}
       </div>
 
-      <div className="text-lg font-extrabold italic md:text-4xl">
+      <div className="text-2xl font-extrabold italic md:text-4xl">
         Cloud & DevOps
       </div>
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
@@ -177,7 +177,7 @@ export default function SkillSection() {
         })}
       </div>
 
-      <div className="text-lg font-extrabold italic md:text-4xl">Others</div>
+      <div className="text-2xl font-extrabold italic md:text-4xl">Others</div>
       <div className="flex max-w-2xl flex-wrap items-center justify-center gap-6">
         {otherSkills.map((skill, index) => {
           return (

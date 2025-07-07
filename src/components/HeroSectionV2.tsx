@@ -92,7 +92,7 @@ export default function HeroSectionV2() {
             target="_blank"
             className="flex gap-4 items-center hover:underline"
           >
-            <ReactSVG className="h-10 w-10" src={"./icons/PaperClip.svg"} />
+            <ReactSVG className="h-10 w-10" src={"./icons/Download.svg"} />
             My resume
           </Link>
         </div>

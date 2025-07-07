@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage";
 import BlankPageLayout from "./layouts/BlankPageLayout";
 import NotFound from "./pages/NotFound";
 import ProjectPage from "./pages/ProjectPage";
+import ResumePage from "./pages/ResumePage";
 
 export default function AppRouter() {
   return (
@@ -15,6 +16,8 @@ export default function AppRouter() {
         <Route path="/projects" element={<ProjectPage />} />
 
         {/* resume */}
+        <Route path="/resume" element={<ResumePage />} />
+
         {/* about me */}
       </Route>
 
