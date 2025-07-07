@@ -1,5 +1,6 @@
 import { Popover } from "flowbite-react";
 import { ReactSVG } from "react-svg";
+import { Link } from "react-router";
 
 export default function HeroSectionV2() {
   return (
@@ -83,6 +84,17 @@ export default function HeroSectionV2() {
               <ReactSVG className="h-10 w-10" src={"./icons/Linkedin.svg"} />
             </a>
           </Popover>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <Link
+            to="/resume/Resume-noppadon.pdf"
+            target="_blank"
+            className="flex gap-4 items-center hover:underline"
+          >
+            <ReactSVG className="h-10 w-10" src={"./icons/PaperClip.svg"} />
+            My resume
+          </Link>
         </div>
       </div>
 
